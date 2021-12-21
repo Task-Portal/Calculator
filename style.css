@@ -1,0 +1,41 @@
+body {
+    text-align: center;
+    padding: 30px 10%;
+    font: 12pt 'Trebuchet MS';
+    background-color: antiquewhite;
+}
+#form1 {
+    border: 1px solid silver;
+    border-radius: 15px;
+    padding: 30px;
+    width: 450px;
+    margin: 30px auto;
+    box-shadow: 0 0 rgb(167, 108, 108), 0 0 20px silver;
+    background-color:whitesmoke;
+}
+.form-group div {
+    text-align: left;
+    
+}
+.form-group label {
+    font-style: italic;
+    color: black;
+}
+.form-group small {
+    font-style: italic;
+    color: red;
+    display: none;
+}
+.form-button {
+    width: 150px;
+    margin: 20px 3px 3px;
+
+}
+.form-group {
+    margin-top: 10px;
+}
+
+.form-control{
+    color: grey;
+}
+

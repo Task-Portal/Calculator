@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate</title>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculate!!!</h1>
+    </header>
+    <hr>
+    <main>
+        <form id="form1"  method="post" onsubmit="return false" autocomplete="off">
+            <h4>Enter values, please</h4>
+           
+            <!-- 1 => Первое число -->
+            <div class="form-group">
+                
+                <input id="first" name="first" type="number" class="form-control" step="0.01" placeholder="Enter the first number" required>
+
+            </div>
+
+            <!-- 2 => Второе число -->
+            <div class="form-group">
+               
+                <input id="second" name="second" type="number" class="form-control" step="0.01" placeholder="Enter the second number" required>
+
+            </div>
+
+            <div class="form-group">
+            <select id="operation" class="form-control" >
+                <option  value="0">Choose operation</option>
+                <option  value="1">+</option>
+                <option  value="2">-</option>
+                <option  value="3">*</option>
+                <option  value="4">/</option>
+            </select>
+            </div>
+
+            <div id="result"></div>
+
+            <!-- 3 => Buttons -->
+            <div class="form-group">
+                <input type="submit" value="Calculate" class="btn btn-info form-button" />
+               
+            </div>
+
+
+        </form>
+    </main>
+
+
+    <!-- Scripts -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+    <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
